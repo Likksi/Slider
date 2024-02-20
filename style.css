@@ -1,0 +1,182 @@
+main {
+  display: flex;
+  justify-content: center;
+  background-color: #131313;
+  width: 1440px;
+  height: auto;
+}
+
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 1171px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  right: 0;
+  padding-right: 0;
+  margin-bottom: 30px;
+}
+
+nav.menu__links {
+  display: flex;
+}
+
+
+.menu__link-item {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: auto 1rem;
+  white-space: nowrap;
+  font-size: 14px;
+  font-family: Yeseva One;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.menu__link-item.active {
+  color: #E3B873;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: lightgrey;
+}
+
+.slider__body {
+display: flex;
+justify-content: space-between;
+}
+
+.slider__card {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.slider__content {
+  display: flex;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.content__heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.content__h1-2str {
+  display: flex;
+}
+
+.content__img {
+  display: flex;
+  padding-left: 40px;
+}
+
+.content__h1 {
+  font-size: 27px;
+  font-family: Yeseva One;
+  color: #E3B873;
+}
+
+.content__p {
+  font-size: 14px;
+  font-family: Nunito Sans;
+  color: #FFF;
+}
+
+.conteiner__cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  height: auto;
+}
+.h2 {
+  font-size: 18px;
+  font-family: Yeseva One;
+  color: #E3B873;
+}
+
+.city1,
+.city2,
+.area,
+.time,
+.cost {
+  font-size: 13px;
+  font-family: Nunito Sans;
+  color: #FFF;
+}
+.image {
+  width: 679px;
+  height: 482px;
+  display: none;
+ 
+}
+
+.image.active {
+  display: block;
+}
+
+div.slider__arrows {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  cursor: pointer;
+  color: #FFF;
+  position: relative;
+  width: 250px;
+}
+
+.slider__arrow:hover {
+  opacity: 0.5;
+}
+
+.slider__arrow {
+font-size: 41px;
+}
+
+.left {
+left: 0;
+}
+
+
+.right {
+right: 0;
+}
+
+.slider__dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  opacity: .3;
+  width: 100%;
+}
+
+.slider__dots-item {
+  width: 10px;
+  height: 10px;
+  background: #e5e1e1;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.slider__dots-item.active {
+  background: #FFF;
+}
