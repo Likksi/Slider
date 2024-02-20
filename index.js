@@ -79,20 +79,24 @@ document.addEventListener("DOMContentLoaded", function () {
   function moveSlider(num) {
     let activeImage = sliderImages.querySelector(".active");
     let activeDot = sliderDots.querySelector(".active");
+    let activeLink = sliderMenuLinks.querySelector(".active");
 
     if (activeImage) activeImage.classList.remove("active");
     if (activeDot) activeDot.classList.remove("active");
+    if (activeLink) activeLink.classList.remove("active");
 
     let nextImage = sliderImages.querySelector(".n" + num);
     let nextDot = sliderDots.querySelector(".n" + num);
+    let nextLink = sliderMenuLinks.querySelector(".n" + num);
 
     if (nextImage) nextImage.classList.add("active");
     if (nextDot) nextDot.classList.add("active");
+    if (nextLink) nextLink.classList.add("active");
 
     updateCardInfo(num);
     currentIndex = num;
   }
-  
+
   function initMenuLinks() {
     images.forEach((image, index) => {
       let link = `<div class="menu__link-item n${index} ${index === 0 ? "active" : ""}" data-index="${index}">${image.title}</div>`;
